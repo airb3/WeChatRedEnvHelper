@@ -82,3 +82,10 @@ cd WeChatRedEnvHelper/WeChatHelper/TargetApp
 * 压缩Payload目录，重命名压缩后的包名，并将后缀改为`.ipa`结尾的名称。
 * 准备一个无双重验证的iCloud账号，有双重验证的账号用不了。
 * 使用`Impactor`进行安装，[Impactor下载地址](http://www.cydiaimpactor.com/)
+
+
+
+#### 鸣谢
+
+[DKJone](https://github.com/DKJone/DKWechatHelper.git)
+

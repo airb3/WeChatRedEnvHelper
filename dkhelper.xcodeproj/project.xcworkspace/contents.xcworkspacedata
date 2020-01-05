@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/yangyang/wechatredhelper/WeChatRedEnvHelper.xcodeproj">
+      location = "self:/Users/yangyang/dkwechathelper/dkhelper/dkhelper.xcodeproj">
    </FileRef>
 </Workspace>

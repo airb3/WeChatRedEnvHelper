@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		114CCC2F21F817D500A4646E /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 114CCC2E21F817D500A4646E /* MDConfig.plist */; };
-		114CCC3921F817D500A4646E /* libWeChatRedEnvHelperDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 114CCC3821F817D500A4646E /* libWeChatRedEnvHelperDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		114CCC3921F817D500A4646E /* libdkhelperDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 114CCC3821F817D500A4646E /* libdkhelperDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		114CCC3E21F817D500A4646E /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 114CCC3D21F817D500A4646E /* JavaScriptCore.framework */; };
 		114CCC4021F817D500A4646E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 114CCC3F21F817D500A4646E /* Foundation.framework */; };
 		114CCC4221F817D500A4646E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 114CCC4121F817D500A4646E /* UIKit.framework */; };
@@ -68,20 +68,20 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				114CCC3921F817D500A4646E /* libWeChatRedEnvHelperDylib.dylib in CopyFiles */,
+				114CCC3921F817D500A4646E /* libdkhelperDylib.dylib in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		114CCC2721F817D500A4646E /* WeChatRedEnvHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChatRedEnvHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		114CCC2721F817D500A4646E /* dkhelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dkhelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		114CCC2A21F817D500A4646E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		114CCC2C21F817D500A4646E /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "quick-resign.sh"; path = "Scripts/quick-resign.sh"; sourceTree = "<group>"; };
 		114CCC2E21F817D500A4646E /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MDConfig.plist; path = Config/MDConfig.plist; sourceTree = "<group>"; };
 		114CCC3121F817D500A4646E /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
 		114CCC3221F817D500A4646E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		114CCC3821F817D500A4646E /* libWeChatRedEnvHelperDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libWeChatRedEnvHelperDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		114CCC3821F817D500A4646E /* libdkhelperDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libdkhelperDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		114CCC3D21F817D500A4646E /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		114CCC3F21F817D500A4646E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		114CCC4121F817D500A4646E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -151,8 +151,8 @@
 		114CCC1B21F817D500A4646E = {
 			isa = PBXGroup;
 			children = (
-				114CCC2921F817D500A4646E /* WeChatHelper */,
-				114CCC4321F817D500A4646E /* WeChatHelperDylib */,
+				114CCC2921F817D500A4646E /* dkhelper */,
+				114CCC4321F817D500A4646E /* dkhelperDylib */,
 				114CCC3C21F817D500A4646E /* Frameworks */,
 				114CCC2821F817D500A4646E /* Products */,
 			);
@@ -161,13 +161,13 @@
 		114CCC2821F817D500A4646E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				114CCC2721F817D500A4646E /* WeChatRedEnvHelper.app */,
-				114CCC3821F817D500A4646E /* libWeChatRedEnvHelperDylib.dylib */,
+				114CCC2721F817D500A4646E /* dkhelper.app */,
+				114CCC3821F817D500A4646E /* libdkhelperDylib.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		114CCC2921F817D500A4646E /* WeChatHelper */ = {
+		114CCC2921F817D500A4646E /* dkhelper */ = {
 			isa = PBXGroup;
 			children = (
 				114CCC2A21F817D500A4646E /* icon.png */,
@@ -176,7 +176,7 @@
 				114CCC2D21F817D500A4646E /* Config */,
 				114CCC3021F817D500A4646E /* TargetApp */,
 			);
-			path = WeChatHelper;
+			path = dkhelper;
 			sourceTree = "<group>";
 		};
 		114CCC2B21F817D500A4646E /* Scripts */ = {
@@ -213,7 +213,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		114CCC4321F817D500A4646E /* WeChatHelperDylib */ = {
+		114CCC4321F817D500A4646E /* dkhelperDylib */ = {
 			isa = PBXGroup;
 			children = (
 				114CCC8921F8307500A4646E /* wechatHeaders */,
@@ -232,7 +232,7 @@
 				114CCC7721F817D500A4646E /* fishhook */,
 				114CCC7221F817D500A4646E /* Supporting Files */,
 			);
-			path = WeChatHelperDylib;
+			path = dkhelperDylib;
 			sourceTree = "<group>";
 		};
 		114CCC4421F817D500A4646E /* Logos */ = {
@@ -361,9 +361,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		114CCC2621F817D500A4646E /* WeChatRedEnvHelper */ = {
+		114CCC2621F817D500A4646E /* dkhelper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 114CCC8521F817D500A4646E /* Build configuration list for PBXNativeTarget "WeChatRedEnvHelper" */;
+			buildConfigurationList = 114CCC8521F817D500A4646E /* Build configuration list for PBXNativeTarget "dkhelper" */;
 			buildPhases = (
 				114CCC2021F817D500A4646E /* Sources */,
 				114CCC2121F817D500A4646E /* Frameworks */,
@@ -377,14 +377,14 @@
 			dependencies = (
 				114CCC3B21F817D500A4646E /* PBXTargetDependency */,
 			);
-			name = WeChatRedEnvHelper;
+			name = dkhelper;
 			productName = dkhelper;
-			productReference = 114CCC2721F817D500A4646E /* WeChatRedEnvHelper.app */;
+			productReference = 114CCC2721F817D500A4646E /* dkhelper.app */;
 			productType = "com.apple.product-type.application";
 		};
-		114CCC3721F817D500A4646E /* WeChatRedEnvHelperDylib */ = {
+		114CCC3721F817D500A4646E /* dkhelperDylib */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 114CCC8221F817D500A4646E /* Build configuration list for PBXNativeTarget "WeChatRedEnvHelperDylib" */;
+			buildConfigurationList = 114CCC8221F817D500A4646E /* Build configuration list for PBXNativeTarget "dkhelperDylib" */;
 			buildPhases = (
 				114CCC3321F817D500A4646E /* ShellScript */,
 				114CCC3421F817D500A4646E /* Sources */,
@@ -395,9 +395,9 @@
 			);
 			dependencies = (
 			);
-			name = WeChatRedEnvHelperDylib;
+			name = dkhelperDylib;
 			productName = dkhelperDylib;
-			productReference = 114CCC3821F817D500A4646E /* libWeChatRedEnvHelperDylib.dylib */;
+			productReference = 114CCC3821F817D500A4646E /* libdkhelperDylib.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
@@ -417,7 +417,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 114CCC1F21F817D500A4646E /* Build configuration list for PBXProject "WeChatRedEnvHelper" */;
+			buildConfigurationList = 114CCC1F21F817D500A4646E /* Build configuration list for PBXProject "dkhelper" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -429,8 +429,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				114CCC2621F817D500A4646E /* WeChatRedEnvHelper */,
-				114CCC3721F817D500A4646E /* WeChatRedEnvHelperDylib */,
+				114CCC2621F817D500A4646E /* dkhelper */,
+				114CCC3721F817D500A4646E /* dkhelperDylib */,
 			);
 		};
 /* End PBXProject section */
@@ -541,7 +541,7 @@
 /* Begin PBXTargetDependency section */
 		114CCC3B21F817D500A4646E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 114CCC3721F817D500A4646E /* WeChatRedEnvHelperDylib */;
+			target = 114CCC3721F817D500A4646E /* dkhelperDylib */;
 			targetProxy = 114CCC3A21F817D500A4646E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -677,7 +677,7 @@
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "WeChatHelperDylib/WeChatRedEnvHelperDylib-Prefix.pch";
+				GCC_PREFIX_HEADER = "dkhelperDylib/WeChatRedEnvHelperDylib-Prefix.pch";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -686,7 +686,6 @@
 					"$(MonkeyDevPath)/include",
 					"$(MonkeyDevTheosPath)/vendor/include/**",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/WeChatHelper/Info.plist";
 				INSTALL_PATH = "@executable_path/Frameworks/libdkhelperDylib.dylib";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -715,7 +714,6 @@
 					"-framework",
 					RevealServer,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.168linux.xin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -742,7 +740,7 @@
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "WeChatHelperDylib/WeChatRedEnvHelperDylib-Prefix.pch";
+				GCC_PREFIX_HEADER = "dkhelperDylib/WeChatRedEnvHelperDylib-Prefix.pch";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				HEADER_SEARCH_PATHS = (
@@ -750,7 +748,6 @@
 					"$(MonkeyDevPath)/include",
 					"$(MonkeyDevTheosPath)/vendor/include/**",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/WeChatHelper/Info.plist";
 				INSTALL_PATH = "@executable_path/Frameworks/libdkhelperDylib.dylib";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -776,7 +773,6 @@
 					"-weak_library",
 					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.168linux.xin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -787,11 +783,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7.0.2.48;
-				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 7.0.8.48;
+				DEVELOPMENT_TEAM = 3L8W7KAG3P;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = WeChatHelper/Info.plist;
-				MARKETING_VERSION = 7.0.2;
+				INFOPLIST_FILE = dkhelper/Info.plist;
+				MARKETING_VERSION = 7.0.8;
 				MONKEYDEV_ADD_SUBSTRATE = YES;
 				MONKEYDEV_CLASS_DUMP = NO;
 				MONKEYDEV_DEFAULT_BUNDLEID = YES;
@@ -802,7 +798,7 @@
 				PODS_ROOT = "${SRCROOT}/Pods";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.168linux.xin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -810,11 +806,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7.0.2.48;
-				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 7.0.8.48;
+				DEVELOPMENT_TEAM = 3L8W7KAG3P;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = WeChatHelper/Info.plist;
-				MARKETING_VERSION = 7.0.2;
+				INFOPLIST_FILE = dkhelper/Info.plist;
+				MARKETING_VERSION = 7.0.8;
 				MONKEYDEV_ADD_SUBSTRATE = YES;
 				MONKEYDEV_CLASS_DUMP = NO;
 				MONKEYDEV_DEFAULT_BUNDLEID = YES;
@@ -825,14 +821,14 @@
 				PODS_ROOT = "${SRCROOT}/Pods";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.168linux.xin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		114CCC1F21F817D500A4646E /* Build configuration list for PBXProject "WeChatRedEnvHelper" */ = {
+		114CCC1F21F817D500A4646E /* Build configuration list for PBXProject "dkhelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				114CCC8021F817D500A4646E /* Debug */,
@@ -841,7 +837,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		114CCC8221F817D500A4646E /* Build configuration list for PBXNativeTarget "WeChatRedEnvHelperDylib" */ = {
+		114CCC8221F817D500A4646E /* Build configuration list for PBXNativeTarget "dkhelperDylib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				114CCC8321F817D500A4646E /* Debug */,
@@ -850,7 +846,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		114CCC8521F817D500A4646E /* Build configuration list for PBXNativeTarget "WeChatRedEnvHelper" */ = {
+		114CCC8521F817D500A4646E /* Build configuration list for PBXNativeTarget "dkhelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				114CCC8621F817D500A4646E /* Debug */,
