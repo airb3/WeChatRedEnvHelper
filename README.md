@@ -42,7 +42,7 @@ git clone https://github.com/ijoery/wechatredenvhelper.git
 ```
 
 * 去XX助手获取砸壳版本ipa文件。
-* 将获取到的ipa文件拷贝到`./WeChatRedEnvHelper/WeChatHelper/TargetApp`路径下。
+* 将获取到的ipa文件拷贝到`./dkhelper/TargetApp`路径下。
 * 双击`WeChatRedEnvHelper.xcodeproj`打开项目
 
 ---
@@ -69,7 +69,7 @@ git clone https://github.com/ijoery/wechatredenvhelper.git
 * 进入下方项目目录
 
 ```
-cd WeChatRedEnvHelper/WeChatHelper/TargetApp
+cd WeChatRedEnvHelper/dkhelper/TargetApp
 ```
 
 * 此时项目目录中会多一个`WeChat.app`的包，右键单击选择`显示包内容`
