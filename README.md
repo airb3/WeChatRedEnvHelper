@@ -38,12 +38,12 @@ source ~/.bash_profile
 * 下拉源代码
 
 ```
-git clone https://github.com/ijoery/wechatredenvhelper.git
+git clone https://github.com/ijoery/WeChatRedEnvHelper.git
 ```
 
 * 去XX助手获取砸壳版本ipa文件。
 * 将获取到的ipa文件拷贝到`./dkhelper/TargetApp`路径下。
-* 双击`WeChatRedEnvHelper.xcodeproj`打开项目
+* 双击`dkhelper.xcodeproj`打开项目
 
 ---
 
