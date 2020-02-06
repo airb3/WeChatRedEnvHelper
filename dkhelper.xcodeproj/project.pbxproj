@@ -107,7 +107,7 @@
 		114CCC6C21F817D500A4646E /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; name = selectortramps.mac; path = Trace/selectortramps.mac; sourceTree = "<group>"; };
 		114CCC6E21F817D500A4646E /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LLDBTools.h; path = Tools/LLDBTools.h; sourceTree = "<group>"; };
 		114CCC7021F817D500A4646E /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LLDBTools.mm; path = Tools/LLDBTools.mm; sourceTree = "<group>"; };
-		114CCC7321F817D500A4646E /* WeChatRedEnvHelperDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeChatRedEnvHelperDylib-Prefix.pch"; sourceTree = "<group>"; };
+		114CCC7321F817D500A4646E /* dkhelperDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dkhelperDylib-Prefix.pch"; sourceTree = "<group>"; };
 		114CCC7521F817D500A4646E /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
 		114CCC7821F817D500A4646E /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
 		114CCC7A21F817D500A4646E /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
@@ -288,7 +288,7 @@
 		114CCC7221F817D500A4646E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				114CCC7321F817D500A4646E /* WeChatRedEnvHelperDylib-Prefix.pch */,
+				114CCC7321F817D500A4646E /* dkhelperDylib-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -496,7 +496,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -662,6 +662,7 @@
 		114CCC8321F817D500A4646E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3L8W7KAG3P;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -677,7 +678,7 @@
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "dkhelperDylib/WeChatRedEnvHelperDylib-Prefix.pch";
+				GCC_PREFIX_HEADER = "dkhelperDylib/dkhelperDylib-Prefix.pch";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -686,6 +687,7 @@
 					"$(MonkeyDevPath)/include",
 					"$(MonkeyDevTheosPath)/vendor/include/**",
 				);
+				INFOPLIST_FILE = "$(SRCROOT)/dkhelper/Info.plist";
 				INSTALL_PATH = "@executable_path/Frameworks/libdkhelperDylib.dylib";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -715,8 +717,8 @@
 					RevealServer,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = NO;
-				TARGETED_DEVICE_FAMILY = 1;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = NO;
 			};
 			name = Debug;
@@ -724,6 +726,7 @@
 		114CCC8421F817D500A4646E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = 3L8W7KAG3P;
@@ -740,7 +743,7 @@
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "dkhelperDylib/WeChatRedEnvHelperDylib-Prefix.pch";
+				GCC_PREFIX_HEADER = "dkhelperDylib/dkhelperDylib-Prefix.pch";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				HEADER_SEARCH_PATHS = (
@@ -748,6 +751,7 @@
 					"$(MonkeyDevPath)/include",
 					"$(MonkeyDevTheosPath)/vendor/include/**",
 				);
+				INFOPLIST_FILE = "$(SRCROOT)/dkhelper/Info.plist";
 				INSTALL_PATH = "@executable_path/Frameworks/libdkhelperDylib.dylib";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -774,8 +778,8 @@
 					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = NO;
-				TARGETED_DEVICE_FAMILY = 1;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -783,13 +787,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7.0.8.48;
 				DEVELOPMENT_TEAM = 3L8W7KAG3P;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = dkhelper/Info.plist;
-				MARKETING_VERSION = 7.0.8;
 				MONKEYDEV_ADD_SUBSTRATE = YES;
-				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_CLASS_DUMP = YES;
 				MONKEYDEV_DEFAULT_BUNDLEID = YES;
 				MONKEYDEV_INSERT_DYLIB = YES;
 				MONKEYDEV_RESTORE_SYMBOL = NO;
@@ -806,13 +808,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7.0.8.48;
 				DEVELOPMENT_TEAM = 3L8W7KAG3P;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = dkhelper/Info.plist;
-				MARKETING_VERSION = 7.0.8;
 				MONKEYDEV_ADD_SUBSTRATE = YES;
-				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_CLASS_DUMP = YES;
 				MONKEYDEV_DEFAULT_BUNDLEID = YES;
 				MONKEYDEV_INSERT_DYLIB = YES;
 				MONKEYDEV_RESTORE_SYMBOL = NO;
